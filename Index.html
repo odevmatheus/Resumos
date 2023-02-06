@@ -1,0 +1,95 @@
+<!DOCTYPE html>     
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Resumos ADS </title>
+        <link rel="stylesheet" href="CSS/CSS.css">
+    </head>
+
+    <body>
+
+        <main>
+
+            <header>
+                <nav class="Barra">
+                    <div class="Logo">
+                       <a href="Index.html"> <h1> Resumos ADS </h1> </a> 
+                    </div>
+                    <div class="Lista">
+                        <ul> <li> <a href="https://github.com/odevmatheus" target="_blank"> <img src="Imagens/Rede.png" alt="Imagem"> </a> </li> </ul>  
+                    </div>
+                    <div class="Menu">
+                        <button onclick="Show()"><img class="Icone" src="Imagens/Open.svg" alt=""></button>
+                    </div>
+                </nav>
+                <div class="Anexo">
+                    <ul> <li> <a href="https://github.com/odevmatheus" target="_blank"> <img src="Imagens/Rede.png" alt="Imagem"> </a> </li> </ul>   
+                </div>
+            </header>
+
+            <section>
+                <h2> Semestres </h2>
+                <a href="PSemestre.html"> <div id="Semestres" class="BTN2"> Primeiro Semestre </div> </a>
+                <a href="SSemestre.html"> <div id="Semestres" class="BTN2"> Segundo Semestre </div> </a>
+                <a href="TSemestre.html"> <div id="Semestres" class="BTN2"> Terceiro Semestre </div> </a>
+                <div id="Semestres" class="False"> Quarto Semestre </div>
+                <div class="Outros">
+                    <h2> Respostas </h2>
+                    <h5> Criado Pelo Nosso Colega Rafael </h5>
+                    <div class="Acesso">
+                        <button class="False"> Acessar </button>
+                    </div>
+                    <h2> Sobre </h2>
+                    <h5> Saiba Mais Sobre Esse Projeto </h5>
+                    <div class="Acesso">
+                        <button class="False"> Sobre </button>
+                    </div>
+                    <h2> Caso Puder Doar </h2>
+                    <h5> Me Ajude a Pagar Os Boletos </h5> 
+                    <div class="Acesso">
+                        <button id="Chave" class="BTN" onclick="Chave()"> Copiar Chave <img src="Imagens/Doar.png" alt="Imagem"> </button>
+                    </div>
+                    <div class="Separar">
+                        <h3 id="Resposta"> </h3>
+                    </div>       
+                </div>
+            </section>
+    
+            <footer>                
+                <div class="Autor">
+                    <img id="Logo" src="Imagens/Logo.png" alt="Logo">
+                </div>
+            </footer>
+
+        </main>
+
+        <script>
+            function Show() {
+                let Responsivo = document.querySelector('.Anexo');
+                if (Responsivo.classList.contains('Aberto')) {
+                    Responsivo.classList.remove('Aberto');
+                    document.querySelector('.Icone').src = "Imagens/Open.svg";
+                } else {
+                    Responsivo.classList.add('Aberto');
+                    document.querySelector('.Icone').src = "Imagens/Close.svg";
+                }
+            }
+            function Chave(){
+                const Texto = "07e0a017-3ad3-4c09-989a-eea1695c1a69";
+                const Resposta = document.getElementById('Resposta')
+                let InputTest = document.createElement("input");
+                InputTest.value = Texto;
+                document.body.appendChild(InputTest);
+                InputTest.select();
+                document.execCommand('copy');
+                document.body.removeChild(InputTest); 
+                Resposta.innerHTML = 'Chave Copiada Com Sucesso'
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Goldman', cursive;
+}
+body{
+    background: #F6F6E2;
+}
+header {
+    width: 100%;
+    height: auto;
+    background-color: #003F69;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #003F69;
+}
+input{
+    width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+}  
+h2{
+    margin: 2vh 0vw;
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+h3{
+    margin: 1vh 0vw;
+    font-size: 4vw;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;  
+}
+h4{
+    padding: 3vh 0vw;
+    font-size: 3.2vw;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;  
+}
+h5{
+    font-size: 2vw;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;      
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    margin: 2vh 2vw;
+    padding: 2vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bolder;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1vw;    
+}
+.Barra {
+    display: flex;
+    justify-content: center;
+}
+.Logo {
+    width: 80%;
+    height: auto;
+    padding: 0vh 0vw 0vh 3vw;
+    display: flex;
+    align-items: center; 
+}
+.Lista {
+    width: 20%;
+    height: auto;
+    padding: 0vh 2vw 0vh 0vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;   
+}
+.Lista ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+ul li img{
+    width: 5vw;
+    height: auto;
+}
+ul li img:Hover{
+    width: 6vw;
+    height: auto;
+    transition: 0.2s;
+}
+.Menu {
+    display: none;
+}
+.Anexo {
+    display: none;
+}
+#Semestres{
+    width: fixed;
+    height: auto;
+    margin: 0vh 20vw 3vh 20vw; 
+    padding: 2vh 0vw 2vh 0vw;
+    display: flex;
+    justify-content: center;
+    font-size: 3.6vw;
+    font-weight: bolder; 
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    border-radius: 1vw;  
+}
+.Outros{
+    width: 100%;
+    height: auto;
+    margin: 0vh 0vw 5vh 0vw;
+}
+.Outros h2{
+    margin: 0vh 0vw 1vh 0vw;
+}
+.Acesso{
+    width: 100%;
+    height: auto;
+    padding: 1vh 0vw;
+    display: flex;
+    justify-content: center;  
+}
+.Acesso img{
+    width: 3vw;
+    height: auto;
+    margin: 0vh 0vw 0vh 1vw;
+}
+.Separar{
+    width: 100%;
+    height: auto;
+    margin: 0vh 0vw 3vh 0vw;
+    display: flex;
+    justify-content: center;
+}
+.Separar h5{
+    margin: 2vh 0vw 0vh 0vw;
+}
+#Logo{
+    width: 5vw;
+    height: auto;
+    margin: 3vh 0vw 2vh 0vw;
+}
+.Fundo{
+    width: fixed;
+    height: auto;
+    margin: 5vh 3vw;
+    padding: 3vh 0vw 3vh;
+    border-radius: 1vw;
+    background: #E1DACA;
+}
+.Escolhas{
+    width: 100%;
+    height: auto;
+    padding: 1vh 0vw 1vh 0vw;
+    display: flex;
+    justify-content: center;
+}
+.False{
+    cursor: auto;
+    background: #65727A;
+    color: #FFF; 
+}
+.BTN{
+    background: #003F69;
+    color: #FFF;
+}
+.BTN1{
+    background: #BF0A0D;
+    color: #FFF;
+}
+.BTN2{
+    background: #36802D;
+    color: #FFF;
+}
+.BTN:Hover{
+    background: #0B2E59;
+}
+.BTN1:Hover{
+    background: #990100;
+}
+.BTN2:Hover{
+    background: #234D20;
+}
+@media (max-width: 700px) {
+    h1{
+        font-size: 8vw;
+    }
+    h2{
+        font-size: 7vw;
+    }
+    h3{
+        font-size: 4.5vw;
+    }
+    h4{
+        font-size: 4.5vw;
+    }
+    h5{
+        font-size: 3vw;    
+    }
+    button{
+        margin: 1vh 1vw;
+        padding: 1.3vh 3vw;
+        font-size: 3.8vw;
+        letter-spacing: 0.5vw;
+        border-radius: 2vw; 
+    }
+    .Lista {
+        display: none;
+    }
+    ul li {
+        display: none;
+    }
+    ul li img{
+        width: 13vw;  
+    }
+    ul li img:Hover{
+        width: 15vw;
+    }
+    .Menu {
+        width: 20%;
+        height: auto;
+        padding: 0vh 2vw 0vh 0vw;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .Menu button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    }
+    .Anexo ul {
+        padding: 0vh 0vw 1vh 0vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Anexo ul li {
+        padding: 1vh 0vw 0vh 0vw;
+        display: block;
+    }
+    .Aberto {
+        display: block;
+    }
+    #Semestres{
+        margin: 0vh 8vw 3vh 8vw; 
+        font-size: 5.3vw;
+        letter-spacing: 0.5vw;
+        border-radius: 2vw;  
+    }
+    .Outros{
+        margin: 0;
+    }
+    .Acesso img{
+        width: 3.8vw;
+    }
+    .Separar{
+        margin: 0vh 0vw 2vh 0vw;
+    }
+    #Logo{
+        width: 8vw;
+        margin: 2vh 0vw 1vh 0vw;
+    }
+    .Fundo{
+        margin: 3vh 3vw;
+        padding: 2vh 0vw 2vh 0vw;
+        border-radius: 2vw;
+    }
+    .Escolhas button{
+        margin: 0vh 3vw;
+    }
+}
