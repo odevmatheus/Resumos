@@ -162,9 +162,6 @@ ul li img:Hover{
     display: flex;
     justify-content: center;
 }
-.Separar h5{
-    margin: 2vh 0vw 0vh 0vw;
-}
 #Logo{
     width: 5vw;
     height: auto;
@@ -177,6 +174,11 @@ ul li img:Hover{
     padding: 3vh 0vw 3vh;
     border-radius: 1vw;
     background: #E1DACA;
+}
+.Fundo img{
+    width: 3vw;
+    height: auto;
+    margin: 0vh 0vw 0vh 1vw;
 }
 .Escolhas{
     width: 100%;
@@ -225,7 +227,7 @@ ul li img:Hover{
         font-size: 4.5vw;
     }
     h5{
-        font-size: 3vw;    
+        font-size: 3.2vw;    
     }
     button{
         margin: 1vh 1vw;
@@ -273,16 +275,16 @@ ul li img:Hover{
         display: block;
     }
     #Semestres{
-        margin: 0vh 8vw 3vh 8vw; 
-        font-size: 5.3vw;
-        letter-spacing: 0.5vw;
+        margin: 0vh 8vw 2vh 8vw; 
+        font-size: 4.5vw;
+        letter-spacing: 0.6vw;
         border-radius: 2vw;  
     }
     .Outros{
         margin: 0;
     }
     .Acesso img{
-        width: 3.8vw;
+        width: 4vw;
     }
     .Separar{
         margin: 0vh 0vw 2vh 0vw;
@@ -292,9 +294,12 @@ ul li img:Hover{
         margin: 2vh 0vw 1vh 0vw;
     }
     .Fundo{
-        margin: 3vh 3vw;
+        margin: 2vh 0vw;
         padding: 2vh 0vw 2vh 0vw;
-        border-radius: 2vw;
+        border-radius: 0vw;
+    }
+    .Fundo img{
+        width: 4vw;
     }
     .Escolhas button{
         margin: 0vh 3vw;
