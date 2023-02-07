@@ -227,7 +227,7 @@ ul li img:Hover{
         font-size: 4.5vw;
     }
     h5{
-        font-size: 3.2vw;    
+        font-size: 4vw;    
     }
     button{
         margin: 1vh 1vw;
@@ -275,8 +275,8 @@ ul li img:Hover{
         display: block;
     }
     #Semestres{
-        margin: 0vh 8vw 2vh 8vw; 
-        font-size: 4.5vw;
+        margin: 0vh 5vw 2vh 5vw; 
+        font-size: 5.6vw;
         letter-spacing: 0.6vw;
         border-radius: 2vw;  
     }

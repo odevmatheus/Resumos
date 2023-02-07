@@ -46,10 +46,12 @@
                     <h5> Me Ajude a Pagar Os Boletos </h5> 
                     <div class="Acesso">
                         <button id="Chave" class="BTN" onclick="Chave()"> Copiar Chave <img src="Imagens/Doar.png" alt="Imagem"> </button>
-                    </div>
-                    <div class="Separar">
-                        <h3 id="Resposta"> </h3>
-                    </div>                       
+                    </div> 
+                    <h2> Respostas </h2>
+                    <h5> Criado Por Rafael Armaral </h5>
+                    <div class="Acesso">
+                       <a href="https://siterespostas.com.br" target="_blank"> <button class="BTN"> Acessar </button> </a>  
+                    </div>                         
                 </div>
             </section>
     
@@ -74,7 +76,7 @@
             }
             function Chave(){
                 const Texto = "07e0a017-3ad3-4c09-989a-eea1695c1a69";
-                const Resposta = document.getElementById('Resposta')
+                const Resposta = document.getElementById('Chave')
                 let InputTest = document.createElement("input");
                 InputTest.value = Texto;
                 document.body.appendChild(InputTest);
