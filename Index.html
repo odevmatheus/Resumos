@@ -1,4 +1,4 @@
-<!DOCTYPE html>     
+<!DOCTYPE html>      
 <html lang="pt-br">
 
     <head>
@@ -7,16 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Resumos ADS </title>
         <link rel="stylesheet" href="CSS/CSS.css">
+        <link rel="icon" href="Imagens/Logo.ico">
     </head>
 
     <body>
 
         <main>
 
-            <header>
+            <header> 
                 <nav class="Barra">
                     <div class="Logo">
-                       <a href="Index.html"> <h1> Resumos ADS </h1> </a> 
+                       <a href="Index.html"> <h1> Resumos <b> ADS </b> </h1> </a> 
                     </div>
                     <div class="Lista">
                         <ul> <li> <a href="https://github.com/odevmatheus" target="_blank"> <img src="Imagens/Rede.png" alt="Imagem"> </a> </li> </ul>  
@@ -30,34 +31,138 @@
                 </div>
             </header>
 
-            <section>
+            <section>              
                 <h2> Semestres </h2>
-                <a href="PSemestre.html"> <div id="Semestres" class="BTN2"> Primeiro Semestre </div> </a>
-                <a href="SSemestre.html"> <div id="Semestres" class="BTN2"> Segundo Semestre </div> </a>
-                <a href="TSemestre.html"> <div id="Semestres" class="BTN2"> Terceiro Semestre </div> </a>
-                <div id="Semestres" class="False"> Quarto Semestre </div>
+                <div class="Resumos">
+                    <div class="Semestre">
+                        <button class="BTN2" onclick="Mostrar('PS')"> 1º Semestre </button>
+                    </div>
+                    <div id="PS" class="Esconder">
+                        <div class="Fundo">
+                            <h3> Arquitetura Computacional </h3>
+                            <div class="Escolhas">
+                                <a href="Documentos/Resumo 01.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
+                                <a href="Documentos/Resumo 01.rar" download="Resumo 01.rar"> <button class="BTN2"> Download </button> </a>
+                            </div>
+                        </div>
+                        <div class="Fundo">
+                            <h3> Redes </h3>
+                            <div class="Escolhas">
+                                <a href="Documentos/Resumo 02.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
+                                <a href="Documentos/Resumo 02.rar" download="Resumo 02.rar"> <button class="BTN2"> Download </button> </a>
+                            </div>
+                        </div>
+                        <div class="Fundo">
+                            <h3> Projeto De Software </h3>
+                            <div class="Escolhas">
+                                <a href="Documentos/Resumo 03.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
+                                <a href="Documentos/Resumo 03.rar" download="Resumo 03.rar"> <button class="BTN2"> Download  </button> </a>
+                            </div>
+                        </div>
+                        <div class="Fundo">
+                            <h3> Auditoria De Sistemas </h3>
+                            <div class="Escolhas">
+                                <a href="Documentos/Resumo 04.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
+                                <a href="Documentos/Resumo 04.rar" download="Resumo 04.rar"> <button class="BTN2"> Download  </button> </a>
+                            </div> 
+                        </div> 
+                        <div class="Separar">
+                            <button class="BTN1" onclick="Mostrar('PS')"> Fechar </button> 
+                        </div>  
+                    </div>
+                   <div class="Semestre">
+                        <button class="BTN2" onclick="Mostrar('SS')"> 2º Semestre </button>
+                   </div>
+                   <div id="SS" class="Esconder">
+                        <div class="Fundo">
+                            <h3> Fundamento Computacional </h3>
+                            <div class="Escolhas">
+                                <a href="Documentos/Resumo 05.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
+                                <a href="Documentos/Resumo 05.rar" download="Resumo 05.rar"> <button class="BTN2"> Download </button> </a>
+                            </div>
+                        </div>
+                        <div class="Fundo">
+                            <h3> Engenharia De Software </h3>
+                            <div class="Escolhas">
+                                <a href="Documentos/Resumo 06.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
+                                <a href="Documentos/Resumo 06.rar" download="Resumo 06.rar"> <button class="BTN2"> Download </button> </a>
+                            </div>
+                        </div>
+                        <div class="Fundo">
+                            <h3> Modelagem De Dados </h3>
+                            <div class="Escolhas">
+                                <a href="Documentos/Resumo 07.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
+                                <a href="Documentos/Resumo 07.rar" download="Resumo 07.rar"> <button class="BTN2"> Download </button> </a>
+                            </div> 
+                        </div> 
+                        <div class="Fundo">
+                            <h3> Modelagem De Sistemas </h3>
+                            <div class="Escolhas">
+                                <a href="Documentos/Resumo 08.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
+                                <a href="Documentos/Resumo 08.rar" download="Resumo 08.rar"> <button class="BTN2"> Download </button> </a>
+                            </div>
+                        </div>
+                        <div class="Separar">
+                            <button class="BTN1" onclick="Mostrar('SS')"> Fechar </button> 
+                        </div> 
+                    </div> 
+                    <div class="Semestre">
+                        <button class="BTN2" onclick="Mostrar('TS')"> 3º Semestre </button>
+                    </div> 
+                    <div id="TS" class="Esconder">  
+                        <div class="Fundo">
+                            <h3> Modelagem Orientada </h3>
+                            <div class="Escolhas">
+                                <button class="False"> Ver Resumo </button>
+                                <button class="False"> Download </button>
+                            </div>
+                        </div>
+                        <div class="Fundo">
+                            <h3> Python </h3>
+                            <div class="Escolhas">
+                                <button class="False"> Ver Resumo </button>
+                                <button class="False"> Download </button>
+                            </div>
+                        </div>
+                        <div class="Fundo">
+                            <h3> Banco De Dados </h3>
+                            <div class="Escolhas">
+                                <button class="False"> Ver Resumo </button>
+                                <button class="False"> Download </button>
+                            </div> 
+                        </div> 
+                        <div class="Fundo">
+                            <h3> Linguagem Orientada </h3>
+                            <div class="Escolhas">
+                                <button class="False"> Ver Resumo </button>
+                                <button class="False"> Download </button>
+                            </div>
+                        </div>
+                        <div class="Separar">
+                            <button class="BTN1" onclick="Mostrar('TS')"> Fechar </button> 
+                        </div> 
+                    </div> 
+                    <div class="Semestre">
+                        <button class="False"> 4º Semestre </button>
+                    </div>
+                </div>
                 <div class="Outros">
-                    <h2> Doar </h2>
-                    <h5> Me Ajude a Pagar Os Boletos </h5> 
+                    <h2> Donate </h2>
+                    <h4> Ajude a Pagar Os Boletos </h4> 
                     <div class="Acesso">
                         <button id="Chave" class="BTN" onclick="Chave()"> Copiar Chave <img src="Imagens/Doar.png" alt="Imagem"> </button>
                     </div> 
                     <h2> Respostas </h2>
-                    <h5> Criado Por Rafael Amaral </h5>
+                    <h4> Criado Por Rafael Amaral </h4>
                     <div class="Acesso">
                        <a href="https://siterespostas.com.br" target="_blank"> <button class="BTN"> Acessar </button> </a>  
-                    </div> 
-                    <h2> Contato </h2>
-                    <h5> Converse Comigo </h5>
-                    <div class="Acesso">
-                        <button class="False"> Contato </button>
-                    </div>                            
+                    </div>                         
                 </div>
             </section>
     
             <footer>                
                 <div class="Autor">
-                    <img id="Logo" src="Imagens/Logo.png" alt="Logo">
+                    <img class="Matheus" src="Imagens/Marca.png" alt="Logo">
                 </div>
             </footer>
 
@@ -74,21 +179,27 @@
                     document.querySelector('.Icone').src = "Imagens/Close.svg";
                 }
             }
+            function Mostrar(el) {
+                var Modo = document.getElementById(el).style.display;
+                if(Modo == 'block'){
+                    document.getElementById(el).style.display = 'none';       
+                }   else{                 
+                    document.getElementById(el).style.display = 'block';
+                }
+            }
             function Chave(){
                 const Texto = "07e0a017-3ad3-4c09-989a-eea1695c1a69";
-                const Resposta = document.getElementById('Chave')
+                const Resposta = document.getElementById('Chave');
                 let InputTest = document.createElement("input");
                 InputTest.value = Texto;
                 document.body.appendChild(InputTest);
                 InputTest.select();
                 document.execCommand('copy');
                 document.body.removeChild(InputTest); 
-                Resposta.innerHTML = 'Chave Copiada Com Sucesso'
+                Resposta.innerHTML = 'Chave Copiada Com Sucesso';
             }
         </script>
 
     </body>
-
-    <!-- Matheus Oliveira -->
 
 </html>

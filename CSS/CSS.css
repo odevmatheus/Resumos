@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap'); 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Goldman', cursive;
+    font-family: 'Kanit', sans-serif;
 }
 body{
+    cursor: default;
     background: #F6F6E2;
 }
 header {
     width: 100%;
     height: auto;
-    background-color: #003F69;
+    background-color:#003F69;
 }
 section{
     width: 100%;
@@ -28,37 +29,31 @@ input{
     height: auto;
 }
 h1{
-    font-size: 7vw;
+    font-size: 5vw;
+    letter-spacing: 0.4vw;
+    font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
     color: #FFF;
 }  
 h2{
-    margin: 2vh 0vw;
     font-size: 6vw;
+    letter-spacing: 0.4vw;
     text-transform: uppercase;
     text-align: center;
     color: #000;
 }
 h3{
-    margin: 1vh 0vw;
-    font-size: 4vw;
-    letter-spacing: 0.2vw;
+    padding: 3vh 0vw;
+    font-size: 3vw;
+    letter-spacing: 0.4vw;
     text-transform: uppercase;
     text-align: center;
     color: #000;  
 }
 h4{
-    padding: 3vh 0vw;
-    font-size: 3.2vw;
-    letter-spacing: 0.3vw;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000;  
-}
-h5{
     font-size: 2vw;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.4vw;
     text-transform: uppercase;
     text-align: center;
     color: #000;      
@@ -66,6 +61,9 @@ h5{
 a{
     list-style: none;
     text-decoration: none;
+}
+b{
+    font-size: 4vw;
 }
 button{
     cursor: pointer;
@@ -78,29 +76,30 @@ button{
     align-items: center;
     font-size: 2vw;
     font-weight: bolder;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.4vw;
     text-transform: uppercase;
     border: none;
-    border-radius: 1vw;    
+    border-radius: 2vw;    
 }
 .Barra {
     display: flex;
     justify-content: center;
 }
 .Logo {
-    width: 80%;
+    width: 50%;
     height: auto;
-    padding: 0vh 0vw 0vh 3vw;
+    padding: 1vh 0vw 1vh 2vw;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    justify-content: left;
 }
 .Lista {
-    width: 20%;
+    width: 50%;
     height: auto;
-    padding: 0vh 2vw 0vh 0vw;
+    padding: 1vh 2vw 1vh 0vw;
     display: flex;
     justify-content: right;
-    align-items: center;   
+    align-items: center;  
 }
 .Lista ul {
     display: flex;
@@ -122,18 +121,54 @@ ul li img:Hover{
 .Anexo {
     display: none;
 }
-#Semestres{
-    width: fixed;
+.Resumos{
+    width: 100%;
     height: auto;
-    margin: 0vh 20vw 3vh 20vw; 
+}
+.Semestre{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Semestre button{
+    width: 50%;
+    height: auto;
+    margin: 0vh 0vw 2vh 0vw; 
     padding: 2vh 0vw 2vh 0vw;
     display: flex;
     justify-content: center;
-    font-size: 3.6vw;
+    font-size: 3vw;
     font-weight: bolder; 
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.4vw;
     text-transform: uppercase;
-    border-radius: 1vw;  
+    border-radius: 2vw; 
+}
+.Esconder{
+    display: none;
+}
+.Fundo{
+    width: fixed;
+    height: auto;
+    margin: 2vh 10vw 5vh 10vw;
+    padding: 2vh 0vw 2vh;
+    border-radius: 2vw;
+    background: #E1DACA;
+}
+.Escolhas{
+    width: 100%;
+    height: auto;
+    padding: 1vh 0vw 1vh 0vw;
+    display: flex;
+    justify-content: center;
+}
+.Separar{
+    width: 100%;
+    height: auto;
+    padding: 2vh 0vw;
+    display: flex;
+    justify-content: center;
 }
 .Outros{
     width: 100%;
@@ -148,61 +183,38 @@ ul li img:Hover{
     height: auto;
     padding: 1vh 0vw;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 .Acesso img{
-    width: 3vw;
+    width: 2.5vw;
     height: auto;
     margin: 0vh 0vw 0vh 1vw;
 }
-.Separar{
-    width: 100%;
-    height: auto;
-    margin: 0vh 0vw 3vh 0vw;
-    display: flex;
-    justify-content: center;
-}
-#Logo{
+.Matheus{ 
     width: 5vw;
     height: auto;
     margin: 3vh 0vw 2vh 0vw;
-}
-.Fundo{
-    width: fixed;
-    height: auto;
-    margin: 5vh 3vw;
-    padding: 3vh 0vw 3vh;
-    border-radius: 1vw;
-    background: #E1DACA;
-}
-.Fundo img{
-    width: 3vw;
-    height: auto;
-    margin: 0vh 0vw 0vh 1vw;
-}
-.Escolhas{
-    width: 100%;
-    height: auto;
-    padding: 1vh 0vw 1vh 0vw;
-    display: flex;
-    justify-content: center;
 }
 .False{
     cursor: auto;
     background: #65727A;
     color: #FFF; 
+    box-shadow: 0px 5px 10px rgba(101, 114, 122, .5);
 }
 .BTN{
     background: #003F69;
     color: #FFF;
+    box-shadow: 0px 5px 10px rgba(0, 63, 105, .5);
 }
 .BTN1{
     background: #BF0A0D;
     color: #FFF;
+    box-shadow: 0px 5px 10px rgba(191, 10, 13, .5);
 }
 .BTN2{
     background: #36802D;
     color: #FFF;
+    box-shadow: 0px 5px 10px rgba(54, 128, 45, .5);
 }
 .BTN:Hover{
     background: #0B2E59;
@@ -215,26 +227,28 @@ ul li img:Hover{
 }
 @media (max-width: 700px) {
     h1{
-        font-size: 8vw;
+        font-size: 10.2vw;
+        letter-spacing: 0.6vw;
     }
     h2{
-        font-size: 7vw;
+        margin: 1vh 0vw;
+        font-size: 8.2vw;
+        letter-spacing: 0.6vw;
     }
-    h3{
-        font-size: 4.5vw;
-    }
-    h4{
-        font-size: 4.5vw;
-    }
-    h5{
-        font-size: 3.8vw;    
+    h3, h4{
+        font-size: 5.2vw;
+        letter-spacing: 0.6vw;
+    } 
+    b{
+        font-size: 6.2vw;
+        letter-spacing: 0.6vw;
     }
     button{
         margin: 1vh 1vw;
         padding: 1.3vh 3vw;
-        font-size: 3.8vw;
-        letter-spacing: 0.5vw;
-        border-radius: 2vw; 
+        font-size: 5.2vw;
+        letter-spacing: 0.6vw;
+        border-radius: 5vw;
     }
     .Lista {
         display: none;
@@ -243,15 +257,18 @@ ul li img:Hover{
         display: none;
     }
     ul li img{
-        width: 13vw;  
+        width: 15vw;  
     }
     ul li img:Hover{
         width: 15vw;
     }
+    .Logo{
+        width: 80%;
+    }
     .Menu {
         width: 20%;
         height: auto;
-        padding: 0vh 2vw 0vh 0vw;
+        padding: 0;
         display: flex;
         justify-content: right;
         align-items: center;
@@ -274,34 +291,36 @@ ul li img:Hover{
     .Aberto {
         display: block;
     }
-    #Semestres{
-        margin: 0vh 5vw 2vh 5vw; 
-        font-size: 5.6vw;
-        letter-spacing: 0.6vw;
-        border-radius: 2vw;  
+    .Semestre{
+        padding: 0vh 0vw 2vh 0vw;
+    }
+    .Semestre button{
+        width: 80%;
+        margin: 0; 
+        padding: 2vh 0vw;
+        font-size: 7.2vw;
+        letter-spacing: 0.6vw; 
+        border-radius: 5vw;
+    }
+    .Fundo{
+        margin: 3vh 0vw;
+        padding: 1vh 0vw;
+    }
+    .Escolhas button{
+        margin: 0vh 3vw;
+    }
+    .Separar{
+        padding: 1vh 0vw;
     }
     .Outros{
         margin: 0;
     }
     .Acesso img{
-        width: 4vw;
+        width: 5vw;
+        margin: 0vh 0vw 0vh 2vw;
     }
-    .Separar{
-        margin: 0vh 0vw 2vh 0vw;
-    }
-    #Logo{
+    .Matheus{
         width: 8vw;
         margin: 2vh 0vw 1vh 0vw;
-    }
-    .Fundo{
-        margin: 3vh 0vw;
-        padding: 2vh 0vw 2vh 0vw;
-        border-radius: 0vw;
-    }
-    .Fundo img{
-        width: 4vw;
-    }
-    .Escolhas button{
-        margin: 0vh 3vw;
     }
 }
