@@ -46,14 +46,14 @@
                             </div>
                         </div>
                         <div class="Fundo">
-                            <h3> Redes De Computadores </h3>
+                            <h3> Redes </h3>
                             <div class="Escolhas">
                                 <a href="Documentos/Resumo 02.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
                                 <a href="Documentos/Resumo 02.rar" download="Resumo 02.rar"> <button class="BTN2"> Download </button> </a>
                             </div>
                         </div>
                         <div class="Fundo">
-                            <h3> Projetos De Sistemas </h3>
+                            <h3> Gerenciamento De Projetos </h3>
                             <div class="Escolhas">
                                 <a href="Documentos/Resumo 03.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
                                 <a href="Documentos/Resumo 03.rar" download="Resumo 03.rar"> <button class="BTN2"> Download  </button> </a>
@@ -75,14 +75,14 @@
                    </div>
                    <div id="SS" class="Esconder">
                         <div class="Fundo">
-                            <h3> Fundamentos Computacionais </h3>
+                            <h3> Pensamento Computacional </h3>
                             <div class="Escolhas">
                                 <a href="Documentos/Resumo 05.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
                                 <a href="Documentos/Resumo 05.rar" download="Resumo 05.rar"> <button class="BTN2"> Download </button> </a>
                             </div>
                         </div>
                         <div class="Fundo">
-                            <h3> Engenharia </h3>
+                            <h3> Engenharia De Sistemas </h3>
                             <div class="Escolhas">
                                 <a href="Documentos/Resumo 06.pdf" target="_blank"> <button class="BTN"> Ver Resumo </button> </a>
                                 <a href="Documentos/Resumo 06.rar" download="Resumo 06.rar"> <button class="BTN2"> Download </button> </a>
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                         <div class="Fundo">
-                            <h3> Interface e Usabilidade </h3>
+                            <h3> Interfaces </h3>
                             <div class="Escolhas">
                                 <button class="False"> Ver Resumo </button>
                                 <button class="False"> Download </button>
@@ -132,7 +132,7 @@
                             </div> 
                         </div> 
                         <div class="Fundo">
-                            <h3> Linguagem Baseada Em Objetos </h3>
+                            <h3> Empreendedorismo </h3>
                             <div class="Escolhas">
                                 <button class="False"> Ver Resumo </button>
                                 <button class="False"> Download </button>
@@ -168,38 +168,8 @@
 
         </main>
 
-        <script>
-            function Show() {
-                let Responsivo = document.querySelector('.Anexo');
-                if (Responsivo.classList.contains('Aberto')) {
-                    Responsivo.classList.remove('Aberto');
-                    document.querySelector('.Icone').src = "Imagens/Open.svg";
-                } else {
-                    Responsivo.classList.add('Aberto');
-                    document.querySelector('.Icone').src = "Imagens/Close.svg";
-                }
-            }
-            function Mostrar(el) {
-                var Modo = document.getElementById(el).style.display;
-                if(Modo == 'block'){
-                    document.getElementById(el).style.display = 'none';       
-                }   else{                 
-                    document.getElementById(el).style.display = 'block';
-                }
-            }
-            function Chave(){
-                const Texto = "07e0a017-3ad3-4c09-989a-eea1695c1a69";
-                const Resposta = document.getElementById('Chave');
-                let InputTest = document.createElement("input");
-                InputTest.value = Texto;
-                document.body.appendChild(InputTest);
-                InputTest.select();
-                document.execCommand('copy');
-                document.body.removeChild(InputTest); 
-                Resposta.innerHTML = 'Copiado Com Sucesso';
-            }
-        </script>
-
+        <script src="Comandos/Comandos.js"> </script>
+           
     </body>
 
 </html>
